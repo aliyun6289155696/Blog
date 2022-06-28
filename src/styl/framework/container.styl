@@ -1,0 +1,63 @@
+/*container start*/
+.blog-container 
+  padding-bottom padding-space * 6
+.blog-content_item
+  padding padding-space * 1.5
+  margin-bottom 8px
+  background-color line-modifier-color
+  text-align center
+  border-radius radius-theme-size * 2
+
+.blog-content-never
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  height 400px
+.blog-item_btn
+  margin-top 40px
+  padding padding-space*2 padding-space*3
+  border 1px solid line-theme-color
+  &:hover
+    background-color bg-reverse-color
+
+.blog-content_item a
+  display: block
+
+.blog-item_author
+  padding-right 10px
+
+.blog-item_title
+  color font-title-color
+  font-size 2 * font-size-h
+
+.blog-item_date
+  padding padding-space*2 0
+
+.blog-item_illu 
+  width auto
+  height 220px
+  padding padding-space 0
+  @media screen and (max-width: 600px)
+    height 180px
+
+.blog-item_desc
+  padding padding-space * 2
+  text-align: left
+  text-indent: 2em
+  &:hover
+    color font-theme-color 
+
+.blog-item_tags
+  display flex
+  justify-content: flex-end
+  padding: 0 padding-space * 2
+
+.blog-tags_like,
+.blog-tags_hit,
+.blog-tags_comment
+  padding 0 padding-space
+  color lighten(font-theme-color ,60%)
+  &:hover 
+     color lighten(font-theme-color ,20%)
+/*container end*/

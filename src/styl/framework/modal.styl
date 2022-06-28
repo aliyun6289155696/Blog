@@ -1,0 +1,65 @@
+.blog-modal
+  display flex
+  justify-content: center
+  align-items: center
+  z-index 999
+  position fixed
+  top 0
+  bottom 0
+  left 0
+  right 0
+  margin: auto
+  background-color rgba(0,0,0,.6)
+
+.blog-modal_wrap
+  width 50%
+  padding padding-space * 2  
+  border 2px solid  bg-theme-color
+  background-color #fff
+  box-shadow 0 0 4px bg-modifier-color inset
+  border-radius radius-theme-size
+
+.blog-modal_head
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-bottom: padding-space
+  border-bottom 2px solid bg-theme-color
+
+.blog-modal_title
+  font-size font-size-h * 2
+
+.blog-modal_close
+  font-size font-size-h * 3
+
+.blog-modal_content
+  font-size 16px
+  padding padding-space*2 
+
+.blog-modal_group
+  padding-bottom: padding-space * 2
+
+.blog-error_input
+  position relative
+  &::after
+    position absolute
+    content attr(data-msg)
+    left: padding-space *2
+    font-size 14px
+    bottom: -24px
+    color red
+  
+.blog-modal_content label
+  cursor pointer
+
+.blog-modal_content input
+  width: 100%
+  padding padding-space
+
+.blog-modal_foot 
+  display grid
+  grid-template-areas: '. . btn btn'
+  justify-content end
+  grid-gap padding-space
+  &>button 
+    width 100px

@@ -1,0 +1,38 @@
+<div class="blog-write">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">标题</h3>
+    </div>
+    <div class="panel-body">
+      <input id="blog-write-title" class="blog-write_input" type="text" placeholder="请输入文章标题">
+    </div>
+  </div>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">内容</h3>
+    </div>
+    <div class="panel-body">
+      <div class="blog-write_wrap">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">分类</h3>
+    </div>
+    <div class="panel-body">
+      <ul class="blog-write_column">
+        {{#each list}}
+        <li data-column="{{_id}}" class="{{#if selected}}selected{{/if}}">{{name}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="blog-write_control">
+    <a class="blog-write_submit blog-btn" href="javascript:;">提交</a>
+  </div>
+</div>

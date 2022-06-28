@@ -1,0 +1,30 @@
+<div class="blog-user_info">
+  <form class="form-horizontal" id="{{formType}}" action="javascript:;" enctype="multipart/form-data">
+    <div class="blog-modal_content">
+      {{#each formData}}
+      <div class="form-group blog-modal_group {{#if isFile}}blog-upload{{/if}}">
+        <label for="{{query}}" class="col-sm-2 control-label">{{label}}</label>
+        <div class="col-sm-10 " data-error-name="{{query}}">
+          <input type="{{type}}" id="{{query}}" name="{{query}}" {{#if readonly}}readonly{{/if}}
+            placeholder="{{placeholder}}" data-input-query="{{query}}" {{#if value}} value="{{value}}" {{/if}}>
+          {{#if isFile}}
+          <div class="blog-upload_wrap">
+            <div class="blog-upload_avatar">
+              <img src="{{value}}" data-uplod-img="{{query}}" alt="!">
+            </div>
+            <a href="javascript:;" data-upload="{{query}}" class="blog-btn">上传头像</a>
+            <div class="blog-upload_preview"></div>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="blog-modal_foot">
+      {{#each btns}}
+      <button type="{{#if isSubmit}}submit{{else}}button{{/if}}" class="btn btn-default"
+        data-modal-btn="{{targetName}}">{{name}}</button>
+      {{/each}}
+    </div>
+  </form>
+</div>

@@ -1,0 +1,27 @@
+<div class="blog-comment blog-comment_editor">
+  <h3 class="blog-comment_title">评论</h3>
+  <textarea class="blog-comment_input" data-input="comment" name="comment"></textarea>
+  <a class="blog-comment_submit  blog-btn blog-btn_reverse" href="javascript:;" data-article-id="{{_id}}">提交</a>
+</div>
+
+<div class="blog-comment blog-comment_list">
+  {{#if comments.length}}
+  <h3>评论列表</h3>
+  <ul>
+    {{#each comments}}
+    <li class="blog-comment_item">
+      <div class="blog-comment_user blog-line blog-line_row ">
+        <div class="blog-comment_avatar">
+          <img src="{{uid.avatar}}" alt="!">
+        </div>
+        <span class="blog-comment_name">{{uid.nikname}}</span>
+      </div>
+      <p class="blog-comment_content">{{content}}</p>
+      <p class="blog-comment_date">{{date}}</p>
+    </li>
+    {{/each}}
+  </ul>
+  {{else}}
+  <p class="blog-comment_never">文章暂无评论，快来留言吧！</p>
+  {{/if}}
+</div>

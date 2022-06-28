@@ -1,0 +1,63 @@
+.blog-comment
+  font-size 16px
+  background-color line-modifier-color
+  border-radius radius-theme-size
+  margin-top padding-space * 2
+  & h3
+    padding padding-space
+  .blog-comment_title
+    padding: 0
+    text-align: left 
+
+.blog-comment_editor
+  padding padding-space * 2
+  display flex
+  flex-direction column 
+  justify-content space-between
+  text-align center
+  height 240px
+  &>textarea 
+    padding padding-space
+    height 120px
+    resize none
+
+.blog-comment_list
+  padding 20px 0
+  background-color bg-theme-color
+.blog-comment_never 
+  text-align center   
+  
+.blog-comment_item
+  margin-bottom padding-space
+  padding padding-space * 2 
+  background-color line-modifier-color
+.blog-comment_user
+  display flex
+  align-items center
+  padding padding-space 0
+  font-size 14px
+  line-height 24px
+
+.blog-comment_avatar
+  overflow hidden
+  width 24px
+  height 24px
+  border-radius 50%
+  &>img 
+    width 24px
+    height auto
+
+.blog-comment_name
+  padding-top 6px
+  padding-left padding-space
+  color font-theme-color
+
+.blog-comment_content
+    overflow hidden
+    padding 20px 0
+    word-wrap break-word
+    word-break break-word
+    color #666
+  
+.blog-comment_date
+  text-align right

@@ -1,0 +1,33 @@
+{
+  "name": "validator",
+  "authors": [
+    "jaywcjlove <398188662@qq.com>"
+  ],
+  "description": "轻量级的JavaScript表单验证，字符串验证。没有依赖，支持UMD，~3kb。",
+  "main": "dist/validator.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "validator",
+    "validator.tool",
+    "validator.js",
+    "validation",
+    "validate",
+    "sanitization",
+    "sanitize",
+    "sanitisation",
+    "sanitise",
+    "assert"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jaywcjlove/validator.js",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,83 @@
+/*header start*/
+.blog-head 
+  position fixed
+  z-index 99999
+  width 100%
+  display grid
+  grid-template-columns 1fr 4fr 2fr 1fr
+  grid-template-rows 60px
+  padding padding-space/2 calc(100% - 94vw)
+  background-color bg-reverse-color
+  justify-content space-between
+  align-content center
+  & a
+    color #fff
+
+.blog-head_logo 
+  justify-self center
+  align-self center
+  overflow hidden
+  border-radius 50%
+  & img 
+    display block
+    width auto
+    height 40px
+
+.blog-head_nav 
+  align-self center
+  grid-template-columns auto
+  text-align center
+
+.blog-nav_list 
+  display grid
+  grid-template-columns repeat(6, 1fr)
+  font-size 18px
+
+.blog-head_search 
+  justify-self center
+  align-self center
+  border-radius 6px
+  padding 4px
+  background-color #fff
+  box-shadow 0 0 2px #222
+  font-size 18px
+
+.blog-input_search 
+  width 20vw
+  border 0
+  outline 0
+  padding 0 6px
+
+.blog-icon_search
+  cursor pointer
+
+.blog-head_login 
+  justify-self center
+  align-self center
+  font-size 18px
+  color #ccc
+
+.blog-head_menu 
+  place-self center center
+  font-size 40px
+  grid-column-start 4
+
+.blog-head_avatar
+  position relative
+  display flex
+  justify-content center
+  align-items center
+  overflow hidden
+  width 40px
+  height 40px
+  border-radius 50%
+  &:hover 
+    & .blog-head_write
+      transform translateX(0) translateY(10px)
+      
+.blog-head_write
+  position absolute
+  transform translateX(-20px)
+  transition .5s
+  color #fff
+/*header end*/

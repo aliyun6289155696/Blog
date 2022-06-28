@@ -1,0 +1,47 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-styl": "stylus -w ./src/styl -o ./assets/public/css",
+    "build": "npx webpack --config ./config/webpack.prod.js",
+    "dev": "npx webpack --config ./config/webpack.dev.js",
+    "start": "webpack serve --config ./config/webpack.dev.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bootstrap": "^3.4.1",
+    "cropperjs": "^1.5.12",
+    "handlebars": "^4.7.7",
+    "iscroll": "^5.2.0",
+    "jquery": "^3.5.1",
+    "jsencrypt": "^3.2.1",
+    "packery": "^2.1.2",
+    "sme-router": "^0.12.8",
+    "store": "^2.0.12",
+    "validator.tool": "^1.0.10",
+    "wangeditor": "^4.5.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^4.3.1",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.9.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.4.0"
+  },
+  "keywords": [],
+  "author": "kyogre",
+  "license": "ISC"
+}

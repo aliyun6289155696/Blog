@@ -1,0 +1,10 @@
+<div class="blog-column">
+  <a href="javascript:;" data-modal="postColumn" class="blog-column_item blog-column_add  item-row-4 item-column-4"></a>
+  {{#each list}}
+  <a href="javascript:;" data-router="index" data-column-id="{{_id}}"
+    class="blog-column_item item-row-{{size}} item-column-{{size}}">
+    <p class="blog-column_name">{{name}}</p>
+    <p class="blog-column_count">文章数量：{{aids.length}}</p>
+  </a>
+  {{/each}}
+</div>

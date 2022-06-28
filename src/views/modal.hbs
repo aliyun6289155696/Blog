@@ -1,0 +1,25 @@
+<div class="blog-modal_wrap">
+  <div class="blog-modal_head">
+    <h4 class="blog-modal_title">{{title}}</h4>
+    <button type="button" class="close blog-modal_close" data-modal-btn="close">&times;</button>
+  </div>
+  <form class="form-horizontal" id="{{formType}}" action="javascript:;">
+    <div class="blog-modal_content">
+      {{#each formData}}
+      <div class="form-group blog-modal_group">
+        <label for="{{query}}" class="col-sm-2 control-label">{{label}}</label>
+        <div class="col-sm-10" data-error-name="{{query}}">
+          <input type="{{type}}" id="{{query}}" name="{{query}}" placeholder="{{placeholder}}"
+            data-input-query="{{query}}">
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="blog-modal_foot">
+      {{#each btns}}
+      <button type="{{#if isSubmit}}submit{{else}}button{{/if}}" class="btn btn-default"
+        data-modal-btn="{{targetName}}">{{name}}</button>
+      {{/each}}
+    </div>
+  </form>
+</div>

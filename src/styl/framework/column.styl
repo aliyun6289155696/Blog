@@ -1,0 +1,44 @@
+.blog-column
+  & .blog-column_item
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    padding padding-space * 2
+    background-color line-modifier-color
+    color bg-reverse-color
+    box-shadow 0 0 4px 2px rgba(122,122,122,.3) inset
+    transition .3s
+    & p
+      padding padding-space 
+      font-size 16px
+      line-height 2
+    &:nth-of-type(2n)
+      color line-modifier-color
+      background-color bg-reverse-color
+    &:hover 
+      z-index 99
+      transform scale(1.1)
+    &.blog-column_add
+      position relative
+      display flex
+      justify-content center
+      align-items center
+      background-color line-modifier-color
+      &::after,
+      &::before
+        position absolute
+        content:''
+        background-color line-theme-color
+        width 50%
+        height 8px
+        border-radius 2px
+      &::before
+        width 8px
+        height 50%
+  for num in 2 4 6 8 10
+    .item-row-{num}
+      width num * 40px
+    .item-column-{num}
+      height num * 40px        
+
