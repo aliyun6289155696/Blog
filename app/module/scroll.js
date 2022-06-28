@@ -12,6 +12,8 @@ let scroll = new IScroll('.blog-container', {
   preventDefault: true,
 })
 
+//test
+
 //刷新 scroll 重新根据当前滚动内容适配滚动
 scroll.reset = () => {
   scroll.refresh()
